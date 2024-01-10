@@ -1,6 +1,6 @@
 class MajorityElement {
 
-    fun majorityElement(nums: IntArray): Int {
+    fun solution1(nums: IntArray): Int {
         val frequencyMap = hashMapOf<Int, Int>()
         var maxKey = -1
         var maxVal = -1
@@ -20,6 +20,12 @@ class MajorityElement {
         return maxKey
     }
 
+
+    fun solution2(nums: IntArray) : Int {
+        nums.sort()
+        return nums[nums.size/2]
+    }
+
 }
 
 fun main(args: Array<String>) {
@@ -27,6 +33,8 @@ fun main(args: Array<String>) {
     val input2 = intArrayOf(2,2,1,1,1,2,2)
     val input3 = intArrayOf(1)
     val input4 = intArrayOf(5)
-    println(MajorityElement().majorityElement(input3))
-    println(MajorityElement().majorityElement(input4))
+    println(MajorityElement().solution2(input))
+    println(MajorityElement().solution2(input2))
+    println(MajorityElement().solution2(input3))
+    println(MajorityElement().solution2(input4))
 }
