@@ -22,4 +22,5 @@ fun main() {
     println(TwoSum().findPair(intArrayOf(2,7,11,15), target = 9))
     println(TwoSum().findPair(intArrayOf(3,2,4), target = 6))
     println(TwoSum().findPair(intArrayOf(3,3), target = 6))
+    println(TwoSum().findPair(intArrayOf(-1,-2,-3,-4,-5).reversedArray(), target = -8))
 }
