@@ -19,4 +19,7 @@ class TwoSum {
 
 fun main() {
     println(TwoSum().findPair(intArrayOf(1, 2, 4, 6, 8, 9, 14, 15), target = 13))
+    println(TwoSum().findPair(intArrayOf(2,7,11,15), target = 9))
+    println(TwoSum().findPair(intArrayOf(3,2,4), target = 6))
+    println(TwoSum().findPair(intArrayOf(3,3), target = 6))
 }
